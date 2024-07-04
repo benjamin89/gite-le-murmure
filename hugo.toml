@@ -1,4 +1,45 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://gite-le-murmure.pages.dev/'
+defaultContentLanguage = 'nl'
+title = 'Gîte Le Murmure'
 theme = 'ananke'
+
+[params]
+  body_classes = "avenir bg-near-white"
+  site_logo = "img/logo-no-background.svg"
+  sectionPagesMenu = 'main'
+
+[[params.ananke_socials]]
+name = "facebook"
+url = "https://www.facebook.com/profile.php?id=100083523542453"
+
+[languages]
+  [languages.en]
+    disabled = false
+    languageCode = 'en-GB'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'Gîte Le Murmure'
+    weight = 10
+    [languages.en.params]
+      subtitle = 'Peace, nature and privacy!'
+  [languages.nl]
+    disabled = false
+    languageCode = 'nl-BE'
+    languageDirection = 'ltr'
+    languageName = 'Nederlands'
+    title = 'Gîte Le Murmure'
+    weight = 30
+    [languages.nl.params]
+      subtitle = 'Rust, natuur en privacy!'
+  [languages.fr]
+    disabled = false
+    languageCode = 'fr-FR'
+    languageDirection = 'ltr'
+    languageName = 'Français'
+    title = 'Gîte Le Murmure'
+    weight = 20
+    [languages.fr.params]
+      subtitle = 'Paix, nature et intimité!'
+    
+[markup.goldmark.renderer]
+unsafe= true
