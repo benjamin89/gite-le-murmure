@@ -1,7 +1,8 @@
 baseURL = 'https://gite-le-murmure.pages.dev/'
 defaultContentLanguage = 'nl'
 title = 'Gîte Le Murmure'
-theme = 'ananke'
+theme = ["ananke", "hugo-shortcode-gallery"]
+timeout = 60
 
 [params]
   body_classes = "avenir bg-near-white"
@@ -11,6 +12,10 @@ theme = 'ananke'
 [[params.ananke_socials]]
 name = "facebook"
 url = "https://www.facebook.com/profile.php?id=100083523542453"
+
+[[params.ananke_socials]]
+name = "instagram"
+url = "https://www.instagram.com/gite_le_murmure/"
 
 [languages]
   [languages.en]
